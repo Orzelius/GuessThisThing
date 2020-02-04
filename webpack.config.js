@@ -11,7 +11,7 @@ module.exports = {
         port: 8080
     },
     entry: {
-        app: ['./src/app/index.tsx'],
+        app: ['./src/index.tsx'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -43,7 +43,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'app', 'index.html') }),
+        new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') }),
         new MiniCssExtractPlugin({
             filename: "styles.css"
         })
